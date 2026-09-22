@@ -116,7 +116,7 @@ def indexar_no_chromadb(chunks: list[dict], path_db: str = "./chroma_db", collec
 
 
 if __name__ == "__main__":
-    pasta_dados = "../data"
+    pasta_dados = "./data"
     todos_documentos = []
 
     # 1. Carregar PDFs da pasta data
@@ -130,7 +130,7 @@ if __name__ == "__main__":
         todos_documentos.extend(extrair_texto_markdown(md_path))
 
     if not todos_documentos:
-        print("Nenhum arquivo PDF ou Markdown encontrado em ../data! Adicione arquivos na pasta para testar.")
+        print("Nenhum arquivo PDF ou Markdown encontrado em ./data! Adicione arquivos na pasta para testar.")
     else:
         # 3. Gerar Chunks
         lista_chunks = criar_chunks(todos_documentos, chunk_size=700, chunk_overlap=100)
