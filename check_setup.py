@@ -1,8 +1,7 @@
 import os
 import sys
 from pathlib import Path
-from dotenv import load_dotenv
-
+from dotenv import load_dotenv 
 
 def test_imports():
     print("[1/3] Testando imports de bibliotecas essenciais...")
