@@ -1,5 +1,0 @@
-
-chromadb
-pypdf
-python-dotenv
-protobuf
